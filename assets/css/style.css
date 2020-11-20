@@ -26,7 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-      background-color: var(--third-off-white);
+    background-color: var(--third-off-white);
+    position: relative;
 }
 
 /* Navbar */
@@ -161,22 +162,23 @@ body {
 
 /* Footer Section */
 footer{
-    height: 75px;
+    height: auto;
     background-color: black;
     position: absolute;
-  bottom: 0;
-  width: 100%;      
+    top: 200%;
+    width: 100%;
 }
 /* Social Icons */
+.contact {
+    padding: 2rem;
+}
 .contact ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 .contact ul li {
     list-style: none;
-   
 }
 
 .contact ul li a {
@@ -220,16 +222,16 @@ footer{
     width: 100%;
     height: 100%;
     font-size: 20px;
-    
+
     color: #262626;
     line-height: calc(60px - 12px); /* shaving off some pixels to center the icons to the middle of the background */
     border-radius: 50%;
-    
+
     background: linear-gradient(0deg, #fff, #ddd); /* created a background gradient that stacks on top of the anchor background to create a indention effect */
     transition: .5s;
 }
 
-    /* selectors for icons using nth-child */
+/* selectors for icons using nth-child */
 .contact ul li:nth-child(1) a:hover .fa {color: grey;}
 .contact ul li:nth-child(2) a:hover .fa {color: #007bb6;}
 .contact ul li:nth-child(3) a:hover .fa {color: lightgray;}
