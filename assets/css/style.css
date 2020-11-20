@@ -1,3 +1,9 @@
+:root {
+    --main-blue: #1D82E2;
+    --sub-lg-blue: #4A9BE8;
+    --third-off-white: rgb(235, 235, 235);
+}
+
 * {
     margin: 0;
     padding:0;
@@ -8,6 +14,7 @@
     --sub-lg-blue: #4A9BE8;
 }
 
+/* Global */
 html {
     /* Use Rem for measurement || currently 1rem = 10px */
     font-size: 62.5%;
@@ -19,7 +26,79 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
+      background-color: var(--third-off-white);
 }
+
+/* Navbar */
+.customNav {
+    font-size: 4rem;
+    display:flex;
+    flex-direction: row;
+    color: var(--third-off-white);
+    background-color: rgb(26, 26, 26);
+}
+.customMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.persona {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.navbar-brand a:hover {
+    color: black;
+}
+.navbar-item {
+    color: var(--third-off-white);
+}
+.navbar-item:hover {
+    color: var(--third-off-white);
+    background-color: transparent;
+}
+.navbar-end a:hover {
+    color: black;
+    background-color: transparent;
+}
+
+/* Main Hero */
+.customHero {
+    background-color: #333333;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1 {
+    color: var(--third-off-white)
+}
+.field.is-grouped>.control:not(:last-child) {
+    margin-right: 0%;
+}
+.input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.customTabs a {
+    font-size: 2rem;
+    color: var(--third-off-white);
+}
+.customTabs a:hover {
+    color: rgb(24, 24, 24);
+    background: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
 /* img slideshow */
 .slider{
     display: block;
@@ -79,6 +158,8 @@ body {
     100%{left: 100%; width: 0%;}
 }
 /* ========= */
+
+/* Footer Section */
 footer{
     height: 75px;
     background-color: black;
@@ -155,4 +236,6 @@ footer{
 .contact ul li:nth-child(4) a:hover .fas {color: rgb(99, 240, 86);}
 
 
-/* Footer Section */
+
+
+
