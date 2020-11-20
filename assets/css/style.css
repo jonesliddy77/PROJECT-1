@@ -9,6 +9,10 @@
     padding:0;
     box-sizing: border-box;
 }
+:root {
+    --main-blue: #1D82E2;
+    --sub-lg-blue: #4A9BE8;
+}
 
 /* Global */
 html {
@@ -22,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    background-color: var(--third-off-white);
+      background-color: var(--third-off-white);
 }
 
 /* Navbar */
@@ -94,3 +98,144 @@ body {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
+
+/* img slideshow */
+.slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sub-lg-blue);
+    overflow: hidden;
+    position: absolute;
+}
+.slider > *{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sub-lg-blue);
+    position: absolute;
+
+    animation: slide 12s infinite;
+    overflow: hidden;
+}
+.slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-size: cover;
+    background-color: cadetblue;
+    background-position: center;
+}
+.slide:nth-child(2){
+    left: 100%;
+    animation-delay: 2s;
+    background-color: rgb(160, 95, 160);
+    background-position: center;
+}
+.slide:nth-child(3){
+    left: 100%;
+    animation-delay: 5s;
+    background-color: rgb(160, 95, 95);
+    background-position: center;
+}
+.slide:nth-child(4){
+    left: 100%;
+    animation-delay: 8s;
+    background-color: rgb(160, 139, 95);
+    background-position: center;
+}
+.slide p {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 300px;
+
+}
+@keyframes slide {
+    0%{left: 100%; width: 100%;}
+    5%{left: 0%;}
+    25%{left: 0%;}
+    30%{left: -100%; width: 100%;}
+    30.0001%{left: -100%; width: 0%;}
+    100%{left: 100%; width: 0%;}
+}
+/* ========= */
+
+/* Footer Section */
+footer{
+    height: 75px;
+    background-color: black;
+    position: absolute;
+  bottom: 0;
+  width: 100%;      
+}
+/* Social Icons */
+.contact ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.contact ul li {
+    list-style: none;
+   
+}
+
+.contact ul li a {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    
+    padding: 6px;
+    margin: .5rem;
+    
+    text-align: center;
+    
+    border-radius: 50%;
+    
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+
+.contact ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.contact ul li a .fa {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    
+    color: #262626;
+    line-height: calc(60px - 12px); /* shaving off some pixels to center the icons to the middle of the background */
+    border-radius: 50%;
+    
+    background: linear-gradient(0deg, #fff, #ddd); /* created a background gradient that stacks on top of the anchor background to create a indention effect */
+    transition: .5s;
+}
+.contact ul li a .fas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    
+    color: #262626;
+    line-height: calc(60px - 12px); /* shaving off some pixels to center the icons to the middle of the background */
+    border-radius: 50%;
+    
+    background: linear-gradient(0deg, #fff, #ddd); /* created a background gradient that stacks on top of the anchor background to create a indention effect */
+    transition: .5s;
+}
+
+    /* selectors for icons using nth-child */
+.contact ul li:nth-child(1) a:hover .fa {color: grey;}
+.contact ul li:nth-child(2) a:hover .fa {color: #007bb6;}
+.contact ul li:nth-child(3) a:hover .fa {color: lightgray;}
+.contact ul li:nth-child(4) a:hover .fas {color: rgb(99, 240, 86);}
+
+
+
+
+
