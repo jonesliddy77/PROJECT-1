@@ -13,7 +13,7 @@
     --main-blue: #1D82E2;
     --sub-lg-blue: #4A9BE8;
 }
-
+/* ============================================================================ */
 /* Global */
 html {
     /* Use Rem for measurement || currently 1rem = 10px */
@@ -29,7 +29,7 @@ body {
     background-color: var(--third-off-white);
     position: relative;
 }
-
+/* ============================================================================ */
 /* Navbar */
 .customNav {
     font-size: 4rem;
@@ -64,7 +64,7 @@ body {
     color: black;
     background-color: transparent;
 }
-
+/* ============================================================================ */
 /* Main Hero */
 .customHero {
     background-color: #333333;
@@ -158,19 +158,27 @@ body {
     30.0001%{left: -100%; width: 0%;}
     100%{left: 100%; width: 0%;}
 }
-/* ========= */
+/* ============================================================================ */
+/* Trusted By Section */
+.trustedSection {
+    background-color: var(--third-off-white);
+}
+/* ============================================================================ */
+/* Service Section */
+.serviceSection {
+    background-color: gray;
+}
 
+/* ============================================================================ */
 /* Footer Section */
 footer{
     height: auto;
     background-color: black;
-    position: absolute;
-    top: 200%;
     width: 100%;
 }
 /* Social Icons */
 .contact {
-    padding: 2rem;
+    padding: 3rem;
 }
 .contact ul{
     display: flex;
@@ -236,8 +244,3 @@ footer{
 .contact ul li:nth-child(2) a:hover .fa {color: #007bb6;}
 .contact ul li:nth-child(3) a:hover .fa {color: lightgray;}
 .contact ul li:nth-child(4) a:hover .fas {color: rgb(99, 240, 86);}
-
-
-
-
-
