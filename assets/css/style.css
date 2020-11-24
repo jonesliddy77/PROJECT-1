@@ -216,75 +216,59 @@ body {
 /* ============================================================================ */
 /* Footer Section */
 footer{
-    height: auto;
-    background-color: var(--main-black);
     width: 100%;
-}
-/* Social Icons */
-.contact {
-    padding: 3rem;
-}
-.contact ul{
+    height: auto;
+
+    padding: 2rem !important;
+    
+    border-top: rgb(206, 206, 206) 1px solid;
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.contact ul li {
+.infoFooter {
+   font-size: 2rem;
+}
+.infoSection {
+    margin: 1rem 2rem 1rem;
+    padding: 2rem;
+}
+.infoSection ul {
+    color: rgba(133, 133, 133, 0.9) !important;
+}
+.infoContent {
+    width: 90vw;
+    border-top: rgb(206, 206, 206) 1px solid;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.infoCopyright {
+    padding: 1rem;
+    letter-spacing: .5rem;
+}
+#copyright {
+    padding-left: 2rem;
+}
+.content ul {
     list-style: none;
-}
-
-.contact ul li a {
-    display: block;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    
-    padding: 6px;
-    margin: .5rem;
-    
-    text-align: center;
-    
-    border-radius: 50%;
-    
     text-decoration: none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
+    color: #333333;
+}
+.content li {
+    padding: .5rem;
+}
+.content li+li {
+    margin: 0;
+}
+.content a {
+    color: #333333;
+    padding: 1rem;
     transition: .5s;
 }
-
-.contact ul li a:hover {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-.contact ul li a .fa {
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    
-    color: #262626;
-    line-height: calc(60px - 12px); /* shaving off some pixels to center the icons to the middle of the background */
-    border-radius: 50%;
-    
-    background: linear-gradient(0deg, #fff, #ddd); /* created a background gradient that stacks on top of the anchor background to create a indention effect */
+.content a:hover {
+    background-color: gray;
+    border-radius: 5rem;
     transition: .5s;
 }
-.contact ul li a .fas {
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-
-    color: #262626;
-    line-height: calc(60px - 12px); /* shaving off some pixels to center the icons to the middle of the background */
-    border-radius: 50%;
-
-    background: linear-gradient(0deg, #fff, #ddd); /* created a background gradient that stacks on top of the anchor background to create a indention effect */
-    transition: .5s;
-}
-
-/* selectors for icons using nth-child */
-.contact ul li:nth-child(1) a:hover .fa {color: grey;}
-.contact ul li:nth-child(2) a:hover .fa {color: #007bb6;}
-.contact ul li:nth-child(3) a:hover .fa {color: lightgray;}
-.contact ul li:nth-child(4) a:hover .fas {color: rgb(192, 192, 192);}
