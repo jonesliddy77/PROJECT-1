@@ -2,6 +2,7 @@
     --main-blue: #1D82E2;
     --sub-lg-blue: #4A9BE8;
     --third-off-white: rgb(235, 235, 235);
+    --main-black: #333333;
 }
 
 * {
@@ -67,7 +68,7 @@ body {
 /* ============================================================================ */
 /* Main Hero */
 .customHero {
-    background-color: #333333;
+    background-color: var(--main-black);
 }
 .container {
     display: flex;
@@ -100,8 +101,12 @@ body {
     border-top-right-radius: 1rem;
 }
 
+/* ============================================================================ */
+/* Testimonal Section */
 /* img slideshow */
-
+.testSection {
+    background-color: white;
+}
 .slider-container{
     width: 600px;
     height: auto;
@@ -126,8 +131,6 @@ body {
     padding-right: 5px;
     padding-left: 5px;
     background-color: white;
-    
-    
 }
 .button-container{
     display: flex;
@@ -156,22 +159,44 @@ body {
 #testimonials4:target ~ .testimonials-container{
     left: -1835px;
 }
+
 /* ============================================================================ */
 /* Trusted By Section */
 .trustedSection {
     background-color: var(--third-off-white);
+    color: rgb(196, 196, 196);
 }
+.trustedTitle {
+    color: rgb(196, 196, 196);
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+.title {
+    font-weight: normal;
+}
+
 /* ============================================================================ */
 /* Service Section */
 .serviceSection {
-    background-color: gray;
+    background-color:var(--third-off-white);
+    padding-bottom: 4rem !important;
+}
+.card {
+    box-shadow: none;
+    background-color: transparent;
+    margin: 2rem;
+}
+.card img {
+    width: 5rem;
+    height: auto;
 }
 
 /* ============================================================================ */
 /* Footer Section */
 footer{
     height: auto;
-    background-color: black;
+    background-color: var(--main-black);
     width: 100%;
 }
 /* Social Icons */
@@ -241,4 +266,4 @@ footer{
 .contact ul li:nth-child(1) a:hover .fa {color: grey;}
 .contact ul li:nth-child(2) a:hover .fa {color: #007bb6;}
 .contact ul li:nth-child(3) a:hover .fa {color: lightgray;}
-.contact ul li:nth-child(4) a:hover .fas {color: rgb(99, 240, 86);}
+.contact ul li:nth-child(4) a:hover .fas {color: rgb(192, 192, 192);}

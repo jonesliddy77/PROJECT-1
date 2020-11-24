@@ -46,16 +46,6 @@
                   <span class="persona -ml-6">.persona</span>
               </a>
             </div>
-                <span class="persona">.persona</span>
-              </a>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end customMenu">
-                <a class="navbar-item"> About </a>
-                <a class="navbar-item"> Services </a>
-                <a class="navbar-item"> Contact </a>
-              </div>
-            </div>
           </div>
         </nav>
       </div>
@@ -99,7 +89,7 @@
     <!-- Trusted By Section -->
     <section class="trustedSection section is-medium p-6">
       <div class="container is-max-desktop is-flex is-flex-direction-row is-justify-content-space-evenly is-align-items-center">
-        <h1 class="title has-text-black p-2 m-0">Trusted By: </h1>
+        <div class="trustedTitle title p-2 m-0">Trusted By: </div>
         <div class="p-5">
           <i class="fab fa-facebook-square fa-3x"></i>
         </div>
@@ -115,34 +105,56 @@
       </div>
     </section>
 
-    <div class="slider-container">
-      <span id="testimonials1"></span>
-      <span id="testimonials2"></span>
-      <span id="testimonials3"></span>
-      <span id="testimonials4"></span>
-      <div class="testimonials-container">
-        <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
-        <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
-        <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
-        <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
+    <!-- Testimonals Section -->
+    <section class="testSection is-large">
+      <div class="slider-container">
+        <span id="testimonials1"></span>
+        <span id="testimonials2"></span>
+        <span id="testimonials3"></span>
+        <span id="testimonials4"></span>
+        <div class="testimonials-container">
+          <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
+          <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
+          <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
+          <img class="slide-img" src="./assets/img/imgDemo.jpg" alt="">
+        </div>
+        <div class="button-container">
+          <a href="#testimonials1" class="slide-button"></a>
+          <a href="#testimonials2" class="slide-button"></a>
+          <a href="#testimonials3" class="slide-button"></a>
+          <a href="#testimonials4" class="slide-button"></a>
+          <a href="#testimonials1" class="slide-button"></a>
+        </div>
       </div>
-      <div class="button-container">
-        <a href="#testimonials1" class="slide-button"></a>
-        <a href="#testimonials2" class="slide-button"></a>
-        <a href="#testimonials3" class="slide-button"></a>
-        <a href="#testimonials4" class="slide-button"></a>
-        <a href="#testimonials1" class="slide-button"></a>
-      </div>
-    </div>
+    </section>
 
     <!-- Sections for Service related -->
-    <section class="serviceSection section is-large">
-      <div class="container">
-        <h1 class="title has-text-black p-2 m-0">Explore our Services</h1>
-        <div class="card">
-          <div class="card-content">
+    <section class="serviceSection section is-large is-flex is-flex-direction-column is-justify-content-center is-align-items-center pt-5">
+      <h1 class="title has-text-black p-5 m-5">Explore our Services</h1>
+      <div class="container columns is-flex is-flex-direction-row">
+        <div class="card is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+          <img src="./assets/img/digital-camera.svg">
+          <div class="title p-5">
             Photography
           </div>
+        </div>
+        <div class="card is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <img src="./assets/img/video-camera.svg">
+            <div class="title p-5">
+              Videography
+            </div>
+        </div>
+        <div class="card is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <img src="./assets/img/mixer.svg">
+            <div class="title p-5">
+              Audio
+            </div>
+        </div>
+        <div class="card is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
+            <img src="./assets/img/design.svg">
+            <div class="title p-5">
+              Design
+            </div>
         </div>
       </div>
     </section>
