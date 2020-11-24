@@ -103,7 +103,25 @@ body {
 
 /* ============================================================================ */
 /* Testimonal Section */
-/* img slideshow */
+
+/* ============================================================================ */
+/* Trusted By Section */
+.trustedSection {
+    background-color: var(--third-off-white);
+    color: rgb(196, 196, 196);
+}
+.trustedTitle {
+    color: rgb(196, 196, 196);
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+}
+.title {
+    font-weight: normal;
+}
+
+/* ============================================================================ */
+/* Image Slideshow */
 .testSection {
     background-color: white;
 }
@@ -144,7 +162,7 @@ body {
     height: 10px;
     width: 10px;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--main-black);
     margin: .3rem;
 }
 #testimonials1:target ~ .testimonials-container{
@@ -159,23 +177,6 @@ body {
 #testimonials4:target ~ .testimonials-container{
     left: -1835px;
 }
-
-/* ============================================================================ */
-/* Trusted By Section */
-.trustedSection {
-    background-color: var(--third-off-white);
-    color: rgb(196, 196, 196);
-}
-.trustedTitle {
-    color: rgb(196, 196, 196);
-    font-size: 3rem;
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-}
-.title {
-    font-weight: normal;
-}
-
 /* ============================================================================ */
 /* Service Section */
 .serviceSection {
@@ -191,7 +192,27 @@ body {
     width: 5rem;
     height: auto;
 }
+/* ============================================================================ */
+/* About Us Section */
+.about-company{
+    background-color: var(--main-black);
+}
 
+.subtitle{
+    color: var(--third-off-white);
+}
+.aboutMe-cards{
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    background-color: white;
+    padding: 3rem;
+}
+.card-content{
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
 /* ============================================================================ */
 /* Footer Section */
 footer{
