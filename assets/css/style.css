@@ -52,7 +52,7 @@ body {
     cursor: pointer;
 }
 .persona:hover {
-    color: var(--main-black);
+    color: black;
 }
 .navbar-item {
     color: var(--third-off-white);
@@ -280,12 +280,12 @@ footer{
     padding: 2rem;
     font-size: 2rem;
 }
-.infoCopyright {
-    padding: 1rem;
-    letter-spacing: .5rem;
-}
 #copyright {
     padding-left: 2rem;
+    width: fit-content;
+}
+.footerLogo {
+    width: fit-content !important;
 }
 #symbol {
     font-size: 2rem;
