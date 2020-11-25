@@ -10,10 +10,7 @@
     padding:0;
     box-sizing: border-box;
 }
-:root {
-    --main-blue: #1D82E2;
-    --sub-lg-blue: #4A9BE8;
-}
+
 /* ============================================================================ */
 /* Global */
 html {
@@ -30,6 +27,7 @@ body {
     background-color: var(--third-off-white);
     position: relative;
 }
+
 /* ============================================================================ */
 /* Navbar */
 .customNav {
@@ -50,6 +48,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-style: italic;
+    cursor: pointer;
 }
 .navbar-brand a:hover {
     color: black;
@@ -65,6 +64,7 @@ body {
     color: black;
     background-color: transparent;
 }
+
 /* ============================================================================ */
 /* Main Hero */
 .customHero {
@@ -93,16 +93,17 @@ body {
 .customTabs a {
     font-size: 2rem;
     color: var(--third-off-white);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    transition: .5s;
 }
 .customTabs a:hover {
     color: rgb(24, 24, 24);
     background: white;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    transition: .5s;
 }
-
-/* ============================================================================ */
-/* Testimonal Section */
 
 /* ============================================================================ */
 /* Trusted By Section */
@@ -121,6 +122,7 @@ body {
 }
 
 /* ============================================================================ */
+/* Testimonal Section */
 /* Image Slideshow */
 .testSection {
     background-color: white;
@@ -177,21 +179,7 @@ body {
 #testimonials4:target ~ .testimonials-container{
     left: -1835px;
 }
-/* ============================================================================ */
-/* Service Section */
-.serviceSection {
-    background-color:var(--third-off-white);
-    padding-bottom: 4rem !important;
-}
-.card {
-    box-shadow: none;
-    background-color: transparent;
-    margin: 2rem;
-}
-.card img {
-    width: 5rem;
-    height: auto;
-}
+
 /* ============================================================================ */
 /* About Us Section */
 .about-company{
@@ -206,13 +194,57 @@ body {
     justify-content: center;
     height: 350px;
     background-color: white;
-    padding: 3rem;
+    padding: 4rem;
+}
+.aboutTitle {
+    text-transform: uppercase;
+    line-height: 4rem;
 }
 .card-content{
     display: inline-block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
+    margin: 2rem;
+    padding: 2rem;
+    transition: .5s;
 }
+.card-content:hover {
+    box-shadow: none;
+    transition: .5s;
+}
+
+
+/* ============================================================================ */
+/* Service Section */
+.serviceSection {
+    background-color:var(--third-off-white);
+    padding-bottom: 4rem !important;
+}
+.serviceContainer {
+    width: 80%;
+}
+.card {
+    box-shadow: none;
+    background-color: transparent;
+    margin: 2rem;
+    cursor: pointer;
+}
+.card img {
+    width: 5rem;
+    height: auto;
+}
+.line {
+    width: 20%;
+    height: 2px;
+    margin-top: 1rem;
+    background-color: var(--main-black);
+    border-radius: 4rem;
+    transition: .5s;
+}
+.card:hover .line{
+    width: 50%;
+    transition: .5s;
+}
+
 /* ============================================================================ */
 /* Footer Section */
 footer{
@@ -230,6 +262,7 @@ footer{
 }
 .infoFooter {
    font-size: 2rem;
+   width: 80%;
 }
 .infoSection {
     margin: 1rem 2rem 1rem;
@@ -237,6 +270,8 @@ footer{
 }
 .infoSection ul {
     color: rgba(133, 133, 133, 0.9) !important;
+    letter-spacing: .1rem;
+    line-height: 4rem;
 }
 .infoContent {
     width: 90vw;
@@ -251,10 +286,14 @@ footer{
 #copyright {
     padding-left: 2rem;
 }
+#symbol {
+    font-size: 2rem;
+    font-weight: normal;
+}
 .content ul {
     list-style: none;
     text-decoration: none;
-    color: #333333;
+    color: var(--main-black);
 }
 .content li {
     padding: .5rem;
@@ -263,12 +302,14 @@ footer{
     margin: 0;
 }
 .content a {
-    color: #333333;
+    color: var(--main-black);
     padding: 1rem;
     transition: .5s;
+    width: 100%;
 }
+
 .content a:hover {
-    background-color: gray;
-    border-radius: 5rem;
+    color: var(--third-off-white);
+    border-radius: 10rem;
     transition: .5s;
 }
