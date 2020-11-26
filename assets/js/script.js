@@ -42,7 +42,10 @@ var button=$(".button");
 
 //Calls location API to gather location
 var queryURL="https://api.geoapify.com/v1/ipinfo?apiKey=805c055b98f34c71807194113fb46926"
-$.ajax({url:queryURL,method:"GET"}).then(function(response){
+$.ajax({
+    url:queryURL,
+    method:"GET"
+}).then(function(response){
     console.log(response);
     // sessionStorage.setItem("city",);
     // sessionStorage.setItem("state",);

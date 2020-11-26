@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Persona Service</title>
+    <title>Persona Form</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -34,91 +34,132 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-<body>
-    <section class="hero is-large customHero">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-          <nav class="navbar customNav">
-            <div class="navContainer container ">
-              <div class="navbar-brand">
-                <a class="navbar-item">
-                    <a style="color: #ebebeb" href="./index.html"><span class="persona ml-6">.persona</span></a>
-                </a>
-              </div>
-            </div>
-          </nav>
-        </div>
-     <!-- Footer Section -->
-     <footer class="footer is-flex is-flex-direction-column">
-        <div class="infoFooter is-flex is-flex-direction-row is-justify-content-space-evenly is-align-items-baseline p-2">
-          <section class="infoSection is-flex is-flex-direction-column">
-            <h5>Categories</h5>
-            <ul>
-              <li>Graphic design</li>
-              <li>Videography</li>
-              <li>Photography</li>
-              <li>Music & Audio</li>
-            </ul>
-          </section>
-          <section class="infoSection is-flex is-flex-direction-column">
-            <h5>About</h5>
-            <ul>
-              <li>Careers</li>
-              <li>Blogs</li>
-              <li>Partnerships</li>
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
-              <li>Copyright</li>
-            </ul>
-          </section>
-          <section class="infoSection is-flex is-flex-direction-column">
-            <h5>Support</h5>
-            <ul>
-              <li>Help & Support</li>
-              <li>Customer Service</li>
-              <li>Contact Us</li>
-              <li>FAQ</li>
-            </ul>
-          </section>
-          <section class="infoSection is-flex is-flex-direction-column">
-            <h5>Misc</h5>
-            <ul>
-              <li>Business</li>
-              <li>Persona Pro</li>
-              <li>Services</li>
-              <li>Guides</li>
-            </ul>
-          </section>
-        </div>
-        <div class="infoContent content has-text-centered is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center">
-          <div class="infoCopyright is-flex is-flex-direction-row">
-            <div id="copyright">
-              <a href="./index.html" class="persona footerLogo">.persona</a>
-              <span id="symbol"><i style="font-size: 1.5rem;" class="far fa-copyright"></i></span> PERSONA INC. 2020
-            </div>
-          </div>
-          <div class="mediaContainer is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
-            <ul class="social is-flex is-flex-direction-row">
-              <li>
-                <a href="" target="_blank"><i id="twitter" class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="" target="_blank"><i class="fa fa-facebook-square"></i></a>
-              </li>
-              <li>
-                <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="" target="_blank"><i class="fa fa-github"></i></a>
-              </li>
-            </ul>
+  <body>
+    <!-- Navbar Section -->
+    <div class="hero-head">
+      <nav class="navbar customNav">
+        <div class="navContainer container ">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+                <a style="color: #ebebeb" href="./index.html"><span class="persona ml-6">.persona</span></a>
+            </a>
           </div>
         </div>
-      </footer>
-      <!-- jQuery -->
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  
-      <!-- JavaScript -->
-      <script src="./assets/js/servicePage.js"></script>
-</body>
+      </nav>
+    </div>
+    
+    <!-- Dropdown Menu -->
+    <div class="border">
+      <div class="customDrop dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <h1>Select a service</h1>
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+            <span>Services</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+          <div class="dropdown-content">
+            <button class="dropdown-item">
+              <p>Photography</p>
+            </button>
+            <button class="dropdown-item">
+              <p>Videography</p>
+            </button>
+            <button class="dropdown-item">
+              <p>Audio</p>
+            </button>
+            <button class="dropdown-item">
+              <p>Design</p>
+            </button>
+            <button class="dropdown-item">
+              <p>Programming</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- This area will render the service in the JS -->
+    <section class="mainService">
+      <!-- The serivce cards will render here -->
+      <section class="serviceSection ">
+
+      </section>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer is-flex is-flex-direction-column">
+      <div class="infoFooter is-flex is-flex-direction-row is-justify-content-space-evenly is-align-items-baseline p-2">
+        <section class="infoSection is-flex is-flex-direction-column">
+          <h5>Categories</h5>
+          <ul>
+            <li>Graphic design</li>
+            <li>Videography</li>
+            <li>Photography</li>
+            <li>Music & Audio</li>
+          </ul>
+        </section>
+        <section class="infoSection is-flex is-flex-direction-column">
+          <h5>About</h5>
+          <ul>
+            <li>Careers</li>
+            <li>Blogs</li>
+            <li>Partnerships</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Copyright</li>
+          </ul>
+        </section>
+        <section class="infoSection is-flex is-flex-direction-column">
+          <h5>Support</h5>
+          <ul>
+            <li>Help & Support</li>
+            <li>Customer Service</li>
+            <li>Contact Us</li>
+            <li>FAQ</li>
+          </ul>
+        </section>
+        <section class="infoSection is-flex is-flex-direction-column">
+          <h5>Misc</h5>
+          <ul>
+            <li>Business</li>
+            <li>Persona Pro</li>
+            <li>Services</li>
+            <li>Guides</li>
+          </ul>
+        </section>
+      </div>
+      <div class="infoContent content has-text-centered is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center">
+        <div class="infoCopyright is-flex is-flex-direction-row">
+          <div id="copyright">
+            <a href="./index.html" class="persona footerLogo">.persona</a>
+            <span id="symbol"><i style="font-size: 1.5rem;" class="far fa-copyright"></i></span> PERSONA INC. 2020
+          </div>
+        </div>
+        <div class="mediaContainer is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
+          <ul class="social is-flex is-flex-direction-row">
+            <li>
+              <a href="" target="_blank"><i id="twitter" class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/servicePage.js"></script>
+  </body>
 </html>
