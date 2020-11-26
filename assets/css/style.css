@@ -54,6 +54,10 @@ body {
 .persona:hover {
     color: black;
 }
+.navLocation{
+    margin-top: 0.5rem;
+    margin-left: 82rem;
+}
 .navbar-item {
     color: var(--third-off-white);
 }

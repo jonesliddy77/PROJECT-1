@@ -38,21 +38,16 @@
 
 // Start of Geoapify API Code //
 
-var button=$(".button");
-
-//Calls location API to gather location
+//Calls location API to gather location and print to nav bar
 var queryURL="https://api.geoapify.com/v1/ipinfo?apiKey=805c055b98f34c71807194113fb46926"
 $.ajax({url:queryURL,method:"GET"}).then(function(response){
-    console.log(response);
-    // sessionStorage.setItem("city",);
-    // sessionStorage.setItem("state",);
-    // sessionStorage.setItem("texas",);
+    //Stores user's general location info into session
+    sessionStorage.setItem("city",response.city.name);  //Grab with "sessionStorage.getItem("city")"
+    sessionStorage.setItem("state",response.state.name);    //Grab with "sessionStorage.getItem("state")"
+    sessionStorage.setItem("country",response.country.name);  //Grab with "sessionStorage.getItem("country")"
+
+    //
+    $(".navLocation").text(sessionStorage.getItem("city")+", "+sessionStorage.getItem("state"));
 })
-
-function ipGPS(){
-    alert("Quack!");
-}
-
-button.on("click",ipGPS);
 
 // End of Geoapify API Code //
