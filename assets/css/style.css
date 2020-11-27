@@ -99,6 +99,27 @@ body {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+.serviceList ul {
+    display: flex;
+    flex-direction: row;
+}
+.serviceList ul li a {
+    border: var(--third-off-white) 1px solid;
+    border-radius: 1rem;
+    padding: .2rem .5rem;
+    margin: .2rem;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color: var(--third-off-white);
+}
+.serviceList ul li a:hover {
+    cursor: pointer;
+    border: var(--main-black) 1px solid;;
+    background-color: var(--third-off-white);
+    color: var(--main-black);
+    transition: .5s;
+}
 .customTabs a {
     font-size: 2rem;
     color: var(--third-off-white);
@@ -284,6 +305,14 @@ footer{
     color: rgba(133, 133, 133, 0.9) !important;
     letter-spacing: .1rem;
     line-height: 4rem;
+}
+.infoSection ul li {
+    width: fit-content;
+    height: fit-content;
+}
+.infoSection ul li:hover {
+    color: var(--main-black);
+    cursor: pointer;
 }
 .infoContent {
     width: 90vw;

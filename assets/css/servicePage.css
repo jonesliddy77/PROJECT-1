@@ -60,13 +60,83 @@ body {
 }
 
 /* ============================================================================ */
+/* Dropdown Section */
+.customDrop {
+  margin: 3rem;
+}
+.border {
+  border-bottom:  rgb(206, 206, 206) 1px solid;
+} 
+
+/* ============================================================================ */
+/* Card Section */
+.mainService {
+  width: 100vw;
+  height: auto;
+  background-color: var(--third-off-white);
+}
+.serviceSection {
+  width: 100%;
+  padding: 10rem;
+  display: flex;
+}
+.wrapperDiv {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 20px -3px #000000; 
+  box-shadow: 0px 0px 20px -3px #000000;
+  
+  padding: 2rem;
+  margin: 2rem;
+
+  max-width: 50%;
+  width: 50%;
+  height: auto;
+
+  transition: .5s;
+}
+.wrapperDiv:hover {
+  box-shadow: none;
+  transition: .5s;
+  cursor: pointer;
+}
+.img {
+  max-width: 50%;
+  width: 100%;
+}
+.customText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.customTitle {
+  margin-top: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.customName {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+.customContact {
+  margin-left: 3rem;
+}
+.customContent {
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+
+/* ============================================================================ */
 /* Footer Section */
-footer {
+footer{
   width: 100%;
   height: auto;
 
   padding: 2rem !important;
-
+  
   border-top: rgb(206, 206, 206) 1px solid;
 
   display: flex;
@@ -75,8 +145,8 @@ footer {
   align-items: center;
 }
 .infoFooter {
-  font-size: 2rem;
-  width: 80%;
+ font-size: 2rem;
+ width: 80%;
 }
 .infoSection {
   margin: 1rem 2rem 1rem;
@@ -84,8 +154,16 @@ footer {
 }
 .infoSection ul {
   color: rgba(133, 133, 133, 0.9) !important;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   line-height: 4rem;
+}
+.infoSection ul li {
+  width: fit-content;
+  height: fit-content;
+}
+.infoSection ul li:hover {
+  color: var(--main-black);
+  cursor: pointer;
 }
 .infoContent {
   width: 90vw;
@@ -110,20 +188,20 @@ footer {
   color: var(--main-black);
 }
 .content li {
-  padding: 0.5rem;
+  padding: .5rem;
 }
-.content li + li {
+.content li+li {
   margin: 0;
 }
 .content a {
   color: var(--main-black);
   padding: 1rem;
-  transition: 0.5s;
+  transition: .5s;
   width: 100%;
 }
 
 .content a:hover {
   color: var(--third-off-white);
   border-radius: 10rem;
-  transition: 0.5s;
+  transition: .5s;
 }
