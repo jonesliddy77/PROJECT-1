@@ -58,6 +58,14 @@ body {
 .persona:hover {
   color: black;
 }
+.navLocation {
+  margin-top: 0.5rem;
+  margin-left: 78rem;
+}
+.navService {
+  margin-top: 0.5rem;
+  margin-left: 1rem
+}
 
 /* ============================================================================ */
 /* Dropdown Section */
