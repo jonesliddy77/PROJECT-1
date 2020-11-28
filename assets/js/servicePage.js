@@ -8,25 +8,29 @@ const photoArr = [
         service: "Photo Retouch",
         freelancer: "Bobby Booper",
         contact: "123-456-7890",
-        description: "Want to publish perfect and beautiful selfies to Facebook or Instagram and make your friends go wow but are missing the budget to buy photo editor software? Persona’s photo retouch service has your back. This service is also included in the photography services."
+        description: "Want to publish perfect and beautiful selfies to Facebook or Instagram and make your friends go wow but are missing the budget to buy photo editor software? Persona’s photo retouch service has your back. This service is also included in the photography services.",
+        img: "./assets/img/services/retouch.jpg" // Credits to https://unsplash.com/@zvandrei
     },
     {
         service: "Portrait Photography",
         freelancer: "John Jingle",
         contact: "234-567-8901",
-        description: "Need headshots for your LinkedIn Profile? Need that sweet Tinder profile update? John's got your back. All services include photo retouching."
+        description: "Need headshots for your LinkedIn Profile? Need that sweet Tinder profile update? John's got your back. All services include photo retouching.",
+        img: "./assets/img/services/portrait.jpg" // Credits to https://unsplash.com/@zvandrei
     },
     {
         service: "Wedding Photography",
         freelancer: "Henry Henny",
         contact: "254-254-2541",
-        description: "Want you best day to be captured and saved? Henry can help provide you the best service to get you that best day captured."
+        description: "Want you best day to be captured and saved? Henry can help provide you the best service to get you that best day captured.",
+        img: "./assets/img/services/wedding.jpg" // Credits to https://unsplash.com/@beatriz_perez
     },
     {
         service: "Product Photography",
         freelancer: "Henry Henny",
         contact: "254-254-2541",
-        description: "Need that right amount of shadows on that wine bottle? Need that update on your products for your website? Let us capture these products with our best team on board."
+        description: "Need that right amount of shadows on that wine bottle? Need that update on your products for your website? Let us capture these products with our best team on board.",
+        img: "./assets/img/services/product.jpg" // Credits to https://unsplash.com/@mattykwong1
     }
 ];
 const videoArr = [
@@ -34,25 +38,29 @@ const videoArr = [
         service: "Video Editing",
         freelancer: "Henry Henny",
         contact: "254-254-2541",
-        description: "Got that juicy B-roll, but don't have the time to edit it? We got you covered. We can edit those clips for you and treat you a nice hand massage (not really)."
+        description: "Got that juicy B-roll, but don't have the time to edit it? We got you covered. We can edit those clips for you and treat you a nice hand massage (not really).",
+        img: "./assets/img/services/video-editing.jpg" // Credits to https://unsplash.com/@jakobowens1
     },
     {
         service: "Ad Production",
         freelancer: "Bobby Booper",
         contact: "123-456-7890",
-        description: "Hello, clients, look at your ad, now back to me, now back at your ad, now back to me. Sadly, your ad isn’t my ad, but if he stopped using Microsodt paint and switched to Persona's Ad services, he could get ad traffic like me."
+        description: "Hello, clients, look at your ad, now back to me, now back at your ad, now back to me. Sadly, your ad isn’t my ad, but if he stopped using Microsodt paint and switched to Persona's Ad services, he could get ad traffic like me.",
+        img: "./assets/img/services/ad-production.jpg" // // Credits to https://unsplash.com/@jakobowens1
     },
     {
         service: "Music Video Production",
         freelancer: "Bobby Booper",
         contact: "123-456-7890",
-        description: "Need that K-pop level of professional production? We got the gear, personnel, and minds for it."
+        description: "Need that K-pop level of professional production? We got the gear, personnel, and minds for it.",
+        img: "./assets/img/services/mv-production.jpg" // Credits to https://unsplash.com/@kalvisuals
     },
     {
         service: "Cinematography",
         freelancer: "John Jingle",
         contact: "234-567-8901",
-        description: "I like movies and I'm sure you like it, too. We have something in common. Use my services ;)"
+        description: "I like movies and I'm sure you like it, too. We have something in common. Use my services ;)",
+        img: "./assets/img/services/cinema.jpg" // Credits to https://unsplash.com/@jakobowens1
     }
 ];
 const audioArr = [
@@ -60,19 +68,22 @@ const audioArr = [
         service: "Voice Acting",
         freelancer: "Jacob Jakey",
         contact: "505-555-4444",
-        description: "From anime, to dubbing, to just singing. We have you covered. Need that awesome voice for your next trailer?"
+        description: "From anime, to dubbing, to just singing. We have you covered. Need that awesome voice for your next trailer?",
+        img: "./assets/img/services/voice-act.jpg" // Credits to https://unsplash.com/@henmankk
     },
     {
         service: "Audio Mixing",
         freelancer: "John Doe",
         contact: "111-222-3334",
-        description: "It's like putting audio into a bowl and whisking it. Tryout our services and whisk it all!"
+        description: "It's like putting audio into a bowl and whisking it. Tryout our services and whisk it all!",
+        img: "./assets/img/services/audio-m.jpg" // Credits to https://unsplash.com/@imranpro
     },
     {
         service: "Post Production",
         freelancer: "Vincent Chen",
         contact: "770-880-1314",
-        description: "Pre-production is just as important as post-production. Pos-production services ensure our clients have a perfect clean edits and details for finalization."
+        description: "Pre-production is just as important as post-production. Post-production services ensure our clients have a perfect clean edits and details for finalization.",
+        img: "./assets/img/services/pp.jpg" // Credits to https://unsplash.com/@tompottiger
     }
 ];
 const designArr = [
@@ -80,19 +91,22 @@ const designArr = [
         service: "Graphic Design",
         freelancer: "Vincent Chen",
         contact: "770-880-1314",
-        description: "Need a logo done asap? Got that idea for a new ad? Need someone to sketch out that beautiful ideas of yours? Yeah, I got you."
+        description: "Need a logo done asap? Got that idea for a new ad? Need someone to sketch out that beautiful ideas of yours? Yeah, I got you.",
+        img: "./assets/img/services/graphic.jpg" // Credits to https://unsplash.com/@kseverin
     },
     {
         service: "Twitch Emotes",
         freelancer: "Jacob Jakey",
         contact: "505-555-4444",
-        description: "Poggers. Kappa. Kekw kekw kekw. Pogchamp. Sadge."
+        description: "Poggers. Kappa. Kekw kekw kekw. Pogchamp. Sadge.",
+        img: "./assets/img/services/twitch.jpg" // Credits to https://unsplash.com/@casparrubin
     },
     {
         service: "3D Print",
         freelancer: "Jacob Jakey",
         contact: "505-555-4444",
-        description: "We can print just about anything and everything for you. Need help with a particular design? We can also help with that!"
+        description: "We can print just about anything and everything for you. Need help with a particular design? We can also help with that!",
+        img: "./assets/img/services/3d.jpg" // Credits to https://unsplash.com/@neonbrand
     },
 ];
 const programArr = [
@@ -100,25 +114,29 @@ const programArr = [
         service: "App Development",
         freelancer: "Darrell Robinson",
         contact: "888-000-8080",
-        description: "Have that nice app idea, but don't where to go? Need help planning and creating and implementing these ideas? We got you covered!"
+        description: "Have that nice app idea, but don't where to go? Need help planning and creating and implementing these ideas? We got you covered!",
+        img: "./assets/img/services/app.jpg" // Credits to https://unsplash.com/@rami_alzayat
     },
     {
         service: "UI Design",
         freelancer: "Jeremy Zhu",
         contact: "254-253-2544",
-        description: "We can create smooth animations on the UI to designing UI elements such buttons, icons, sliders, etc. We can also create visually appealing colors and designs to help aid clients' needs."
+        description: "We can create smooth animations on the UI to designing UI elements such buttons, icons, sliders, etc. We can also create visually appealing colors and designs to help aid clients' needs.",
+        img: "./assets/img/services/css.jpg" // Credits to https://unsplash.com/@casparrubin
     },
     {
         service: "UX Design",
         freelancer: "Jones Liddy",
         contact: "555-555-5554",
-        description: "Need that bare bones of a website created? Your last website ended with a bad user experience? Our service includes humanizing technology."
+        description: "Need that bare bones of a website created? Your last website ended with a bad user experience? Our service includes humanizing technology.",
+        img: "./assets/img/services/ux.jpg" // Credits to https://unsplash.com/@kellysikkema
     },
     {
         service: "SEO Optimization",
         freelancer: "Joe Park",
         contact: "777-772-7777",
-        description: "Not getting enough traffic on your website? We can help optimize your website for better traffic. Shipping and handling not included."
+        description: "Not getting enough traffic on your website? We can help optimize your website for better traffic. Shipping and handling not included.",
+        img: "./assets/img/services/seo.jpg" // Credits to https://unsplash.com/@austindistel
     },
 ];
 
@@ -134,13 +152,14 @@ $("button").click(function(event) {
         for (let i = 0; i < photoArr.length; i++) {
             serviceSecEl.append(`
                 <div class="wrapperDiv">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placerholder img">
+                    <figure class="image">
+                        <img src="${photoArr[i].img}" alt="Placerholder img">
+                    </figure>    
                     <div class="customText">
                         <h1 class="customTitle">${photoArr[i].service}</h1>
                         <h5 class="customName">${photoArr[i].freelancer}</h5>
                         <h5 class="customContact">${photoArr[i].contact}</h5>
                         <p class="customContent">${photoArr[i].description}</p>
-                        <div id="Google"></div>
                     </div>
                 </div>
             `);
@@ -151,7 +170,9 @@ $("button").click(function(event) {
         for (let i = 0; i < videoArr.length; i++) {
             serviceSecEl.append(`
                 <div class="wrapperDiv">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placerholder img">
+                    <figure class="image">
+                        <img src="${videoArr[i].img}" alt="Placerholder img">
+                    </figure>  
                     <div class="customText">
                         <h1 class="customTitle">${videoArr[i].service}</h1>
                         <h5 class="customName">${videoArr[i].freelancer}</h5>
@@ -168,7 +189,9 @@ $("button").click(function(event) {
         for (let i = 0; i < audioArr.length; i++) {
             serviceSecEl.append(`
                 <div class="wrapperDiv">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placerholder img">
+                    <figure class="image">
+                        <img src="${audioArr[i].img}" alt="Placerholder img">
+                    </figure>  
                     <div class="customText">
                         <h1 class="customTitle">${audioArr[i].service}</h1>
                         <h5 class="customName">${audioArr[i].freelancer}</h5>
@@ -185,7 +208,9 @@ $("button").click(function(event) {
         for (let i = 0; i < designArr.length; i++) {
             serviceSecEl.append(`
                 <div class="wrapperDiv">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placerholder img">
+                    <figure class="image">
+                        <img src="${designArr[i].img}" alt="Placerholder img">
+                    </figure>  
                     <div class="customText">
                         <h1 class="customTitle">${designArr[i].service}</h1>
                         <h5 class="customName">${designArr[i].freelancer}</h5>
@@ -202,7 +227,9 @@ $("button").click(function(event) {
         for (let i = 0; i < programArr.length; i++) {
             serviceSecEl.append(`
                 <div class="wrapperDiv">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placerholder img">
+                    <figure class="image">
+                        <img src="${programArr[i].img}" alt="Placerholder img">
+                    </figure>  
                     <div class="customText">
                         <h1 class="customTitle">${programArr[i].service}</h1>
                         <h5 class="customName">${programArr[i].freelancer}</h5>

@@ -128,9 +128,10 @@ body {
   transition: .5s;
   cursor: pointer;
 }
-.img {
-  max-width: 50%;
-  width: 100%;
+figure {
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 .customText {
   display: flex;
