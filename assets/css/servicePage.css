@@ -40,7 +40,7 @@ body {
   display: flex;
   flex-direction: row;
   color: var(--third-off-white);
-  background-color: rgb(26, 26, 26) !important;
+  background-color: var(--main-black) !important;
 }
 .customMenu {
   display: flex;
@@ -49,22 +49,40 @@ body {
   align-items: center;
   font-size: 2rem;
 }
+.customNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar-brand {
+  width: 100% !important;
+}
 .persona {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: italic;
   cursor: pointer;
+  transition: .5s;
 }
 .persona:hover {
   color: black;
+  transition: .5s;
 }
-.navLocation {
-  margin-top: 0.5rem;
-  margin-left: 78rem;
+.navWrapper {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
 }
-.navService {
-  margin-top: 0.5rem;
-  margin-left: 1rem
+.navLocation, .navForm {
+  font-size:2rem;
+  transition: .5s;
+}
+.navForm:hover {
+  color: black !important;
+  background-color: transparent;
+  transition: .5s;
 }
 
 /* ============================================================================ */

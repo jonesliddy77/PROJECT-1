@@ -38,72 +38,66 @@ const videoArr = [
     },
     {
         service: "Ad Production",
-        freelancer: "",
-        contact: "",
-        description: ""
+        freelancer: "Bobby Booper",
+        contact: "123-456-7890",
+        description: "Hello, clients, look at your ad, now back to me, now back at your ad, now back to me. Sadly, your ad isn’t my ad, but if he stopped using Microsodt paint and switched to Persona's Ad services, he could get ad traffic like me."
     },
     {
         service: "Music Video Production",
-        freelancer: "",
-        contact: "",
-        description: ""
+        freelancer: "Bobby Booper",
+        contact: "123-456-7890",
+        description: "Need that K-pop level of professional production? We got the gear, personnel, and minds for it."
     },
     {
         service: "Cinematography",
-        freelancer: "",
-        contact: "",
-        description: ""
+        freelancer: "John Jingle",
+        contact: "234-567-8901",
+        description: "I like movies and I'm sure you like it, too. We have something in common. Use my services ;)"
     }
 ];
 const audioArr = [
     {
         service: "Voice Acting",
         freelancer: "Jacob Jakey",
-        contact: "",
-        description: ""
+        contact: "505-555-4444",
+        description: "From anime, to dubbing, to just singing. We have you covered. Need that awesome voice for your next trailer?"
     },
     {
         service: "Audio Mixing",
         freelancer: "John Doe",
-        contact: "",
-        description: ""
+        contact: "111-222-3334",
+        description: "It's like putting audio into a bowl and whisking it. Tryout our services and whisk it all!"
     },
     {
         service: "Post Production",
         freelancer: "Vincent Chen",
-        contact: "",
-        description: ""
+        contact: "770-880-1314",
+        description: "Pre-production is just as important as post-production. Pos-production services ensure our clients have a perfect clean edits and details for finalization."
     }
 ];
 const designArr = [
     {
         service: "Graphic Design",
-        freelancer: "",
-        contact: "",
-        description: ""
-    },
-    {
-        service: "Logo Design",
-        freelancer: "",
-        contact: "",
-        description: ""
+        freelancer: "Vincent Chen",
+        contact: "770-880-1314",
+        description: "Need a logo done asap? Got that idea for a new ad? Need someone to sketch out that beautiful ideas of yours? Yeah, I got you."
     },
     {
         service: "Twitch Emotes",
-        freelancer: "",
-        contact: "",
-        description: ""
+        freelancer: "Jacob Jakey",
+        contact: "505-555-4444",
+        description: "Poggers. Kappa. Kekw kekw kekw. Pogchamp. Sadge."
     },
     {
         service: "3D Print",
-        freelancer: "",
-        contact: "",
-        description: ""
+        freelancer: "Jacob Jakey",
+        contact: "505-555-4444",
+        description: "We can print just about anything and everything for you. Need help with a particular design? We can also help with that!"
     },
 ];
 const programArr = [
     {
-        service: "APP Development",
+        service: "App Development",
         freelancer: "Darrell Robinson",
         contact: "888-000-8080",
         description: "Have that nice app idea, but don't where to go? Need help planning and creating and implementing these ideas? We got you covered!"
@@ -163,6 +157,7 @@ $("button").click(function(event) {
                         <h5 class="customName">${videoArr[i].freelancer}</h5>
                         <h5 class="customContact">${videoArr[i].contact}</h5>
                         <p class="customContent">${videoArr[i].description}</p>
+                        <div id="Google"></div>
                     </div>
                 </div>
             `);
@@ -179,6 +174,7 @@ $("button").click(function(event) {
                         <h5 class="customName">${audioArr[i].freelancer}</h5>
                         <h5 class="customContact">${audioArr[i].contact}</h5>
                         <p class="customContent">${audioArr[i].description}</p>
+                        <div id="Google"></div>
                     </div>
                 </div>
             `);
@@ -195,6 +191,7 @@ $("button").click(function(event) {
                         <h5 class="customName">${designArr[i].freelancer}</h5>
                         <h5 class="customContact">${designArr[i].contact}</h5>
                         <p class="customContent">${designArr[i].description}</p>
+                        <div id="Google"></div>
                     </div>
                 </div>
             `);
@@ -211,6 +208,7 @@ $("button").click(function(event) {
                         <h5 class="customName">${programArr[i].freelancer}</h5>
                         <h5 class="customContact">${programArr[i].contact}</h5>
                         <p class="customContent">${programArr[i].description}</p>
+                        <div id="Google"></div>
                     </div>
                 </div>
             `);
