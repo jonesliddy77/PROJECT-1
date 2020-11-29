@@ -83,11 +83,11 @@ body {
 /* ============================================================================ */
 /* Main Hero */
 .customHero {
-    /* background-image: url("../img/code.jpg");
+    background-image: url("../img/code.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
     background-color: var(--main-black);
 }
 .container {
