@@ -36,17 +36,19 @@
   </head>
   <body>
     <!-- Navbar Section -->
-    <div class="hero-head">
-      <nav class="navbar customNav">
-        <div class="navContainer container ">
-          <div class="navbar-brand">
-            <a class="navbar-item">
-                <a style="color: #ebebeb" href="./index.html"><span class="persona ml-6">.persona</span></a>
-            </a>
+    <nav class="navbar customNav">
+      <div class="navContainer container ">
+        <div class="navbar-brand">
+          <div class="customNavbar navbar-item">
+            <a style="color: #ebebeb" href="./index.html"><span class="persona ml-6">.persona</span></a>
+            <div class="navWrapper">
+              <i style="font-size:2rem; margin: 0rem .5rem;" class="fas fa-map-marker-alt"></i><p class="navLocation" style="color: #ebebeb"></p>
+              <a class="navForm" style="color: #ebebeb" href="./servicePage.html"><i style="margin: 0rem .5rem;color:#4a4a4a;"class="far fa-envelope"></i> Services</a>
+            </div>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
     
     <!-- Dropdown Menu -->
     <div class="border">
@@ -87,6 +89,7 @@
       <section class="serviceSection ">
 
       </section>
+      <!-- <div id="Google"></div> -->
     </section>
 
     <!-- Footer Section -->
@@ -156,10 +159,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- Google Pay API -->
+    <script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/servicePage.js"></script>
   </body>
 </html>

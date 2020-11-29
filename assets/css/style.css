@@ -36,7 +36,9 @@ body {
     display:flex;
     flex-direction: row;
     color: var(--third-off-white);
-    background-color: rgb(26, 26, 26);
+    background-color: var(--main-black) !important;
+    position: fixed;
+    width: 100%;
 }
 .customMenu {
     display: flex;
@@ -50,33 +52,42 @@ body {
     font-weight: bold;
     font-style: italic;
     cursor: pointer;
+    transition: .5s;
 }
 .persona:hover {
     color: black;
+    transition: .5s;
 }
-.navLocation {
-    margin-top: 0.5rem;
-    margin-left: 78rem;
+.customNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
-.navForm {
-    margin-top: 0.5rem;
-    margin-left: 1rem
+.navWrapper {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
 }
-.navbar-item {
-    color: var(--third-off-white);
+.navLocation, .navForm {
+    font-size:2rem;
+    transition: .5s;
 }
-.navbar-item:hover {
-    color: var(--third-off-white);
+.navForm:hover {
+    color: black !important;
     background-color: transparent;
-}
-.navbar-end a:hover {
-    color: black;
-    background-color: transparent;
+    transition: .5s;
 }
 
 /* ============================================================================ */
 /* Main Hero */
 .customHero {
+    background-image: url("../img/code.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--main-black);
 }
 .container {
@@ -99,6 +110,7 @@ body {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+/* Popular Buttons */
 .serviceList ul {
     display: flex;
     flex-direction: row;
@@ -119,6 +131,10 @@ body {
     background-color: var(--third-off-white);
     color: var(--main-black);
     transition: .5s;
+}
+/* Tabs */
+.hero-foot {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .customTabs a {
     font-size: 2rem;
@@ -237,7 +253,7 @@ body {
     height: auto;
     background-color: var(--third-off-white);
   }
-  .aboutCards {
+  .aboutMe-cards {
     width: 100%;
     padding: 3rem;
     display: flex;
@@ -258,7 +274,11 @@ body {
     height: auto;
   
     transition: .5s;
-  }
+}
+.aboutTitle {
+    text-transform: uppercase;
+    line-height: 4rem;
+}
   .wrapperDiv:hover {
     box-shadow: none;
     transition: .5s;
@@ -268,7 +288,7 @@ body {
     max-width: 50%;
     width: 100%;
   }
-  .customText {
+.customText {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -301,7 +321,6 @@ body {
     border-radius: 10rem;
     transition: .5s;
   }
-  
 /* ============================================================================ */
 /* Service Section */
 .serviceSection {
