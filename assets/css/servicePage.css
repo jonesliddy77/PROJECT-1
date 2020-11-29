@@ -88,10 +88,29 @@ body {
 /* ============================================================================ */
 /* Dropdown Section */
 .customDrop {
-  margin: 3rem;
+  font-size: 1.2rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding: 3px;
+  margin: 1.5rem;
+
+  border-radius: 5px;
+  transition: .5s;
+
+}
+.button{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.3rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 100%;
+}
+.dropdown-item{
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.3rem;
 }
 .border {
   border-bottom:  rgb(206, 206, 206) 1px solid;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 } 
 
 /* ============================================================================ */
@@ -155,7 +174,25 @@ figure {
   margin: 1rem;
   font-size: 1.3rem;
 }
-
+/* ============================================================================ */
+/* Buy Button Section */
+#buyButton{
+  font-size: 1.6rem;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin: 1.5rem;
+  -webkit-box-shadow: 0px 0px 20px -3px #000000; 
+  box-shadow: 0px 0px 10px -3px #000000;
+  border-radius: 5px;
+  transition: .5s;
+  background-color: var(--third-off-white);
+  padding: .5rem 1rem;
+}
+#buyButton:hover{
+  box-shadow: none;
+  transition: .5s;
+  cursor: pointer;
+  background-color: var(--third-off-white);
+}
 /* ============================================================================ */
 /* Footer Section */
 footer{
@@ -231,4 +268,55 @@ footer{
   color: var(--third-off-white);
   border-radius: 10rem;
   transition: .5s;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+ /* ============================================================================ */
+/* Nav Section */
+.customNav {
+  font-size: 2rem;
+}
+.navLocation, .navForm {
+  font-size:1.5rem;
+  transition: .5s;
+}
+
+/* ============================================================================ */
+/* Service Section */
+    .serviceSection {
+      width: 100%;
+      padding: 0rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapperDiv{
+      width: 100%;
+      max-width: 100%;
+    }
+/* ============================================================================ */
+/* Buy Button Section */
+
+    #buyButton{
+      font-size: 1.5rem;
+    }
+/* ============================================================================ */
+/* Footer Section */
+.infoFooter {
+  font-size: 1rem;
+  width: 80%;
+ }
+.infoSection {
+  margin: 1rem 1rem 1rem;
+  padding: 1rem;
+}
+.infoContent{
+  display: flex;
+  flex-direction: column !important;
+  font-size: 1.5rem;
+}
 }
