@@ -184,8 +184,8 @@ body {
 }
 .testimonials-container{
     width: 2450px;
-    height: 500px;
-    padding-top: 50px;
+    /* height: 500px; */
+    /* padding-top: 50px; */
     position: relative;
     transition: left 2s;
     -webkit-transition: left 2s;
@@ -197,12 +197,27 @@ body {
     padding-right: 5px;
     padding-left: 5px;
     background-color: white;
-}
-.button-container{
+    height: 400px;
+    width: 600px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+}
+.quotes{
+    font-size: 2rem;
+    width: 300px;
+    margin: 1rem;
+}
+.pics{
+    width: 45%;
+    margin: 1rem;
+}
+.button-container{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
     padding-bottom: 2rem ;
 }
 .slide-button{
@@ -236,93 +251,79 @@ body {
 .subtitle{
     color: var(--third-off-white);
 }
-.aboutMe-cards{
+.mainCards {
+    width: auto;
+    height: auto;
+    background-color: var(--third-off-white);
+  }
+  .aboutMe-cards {
+    width: 100%;
+    padding: 3rem;
     display: flex;
-    justify-content: center;
-    height: 350px;
+  }
+  .wrapperDiv {
+    display: flex;
+    flex-direction: column;
+    
     background-color: white;
-    padding: 4rem;
+    -webkit-box-shadow: 0px 0px 20px -3px #000000; 
+    box-shadow: 0px 0px 20px -3px #000000;
+    
+    padding: 2rem;
+    margin: 2rem;
+  
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+  
+    transition: .5s;
 }
-/* .aboutTitle {
+.aboutTitle {
     text-transform: uppercase;
     line-height: 4rem;
 }
-.card-content{
-    display: inline-block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 2rem;
-    padding: 2rem;
-    transition: .5s;
-}
-.card-content:hover {
+  .wrapperDiv:hover {
     box-shadow: none;
     transition: .5s;
-} */
-
-.wrapperDiv {
-    display: flex;
-    flex-direction: row;
-
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
-    padding: 2rem;
-    margin: 2rem;
-
-    max-width: 50%;
-    width: 50%;
-    height: fit-content;
-
-    transition: .5s;
-}
-.wrapperDiv:hover {
-    box-shadow: none;
-    transition: .5s;
-}
-figure {
+    cursor: pointer;
+  }
+  .img {
     max-width: 50%;
     width: 100%;
-    margin: 1rem 1.5rem 1rem 1rem;
-}
+  }
 .customText {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height:fit-content;
-}
-.customTitle {
+  }
+  .nameTitle {
     margin-top: 1.5rem;
     font-size: 1.7rem;
     font-weight: bold;
-}
-.customName {
+  }
+  .customName {
     margin-left: 2rem;
     font-size: 1.5rem;
-}
-.customContent {
+  }
+  .customContact {
+    margin-left: 1rem;
+  }
+  .aboutYou {
     margin: 1rem;
     font-size: 1.3rem;
-}
-.socialWrapper {
-    width: 100%;
-}
-.cardSocial {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100%;
-    height: fit-content;
-}
-.cardSocial li a {
-    margin: 1rem;
-    font-size: 1.5rem;
+  }
+  #icon{
     color: var(--main-black);
-}
-.cardSocial li:hover a {
+      padding:1rem;
+      transition: .5s;
+      font-size: 2rem;
+  }
+  #icon:hover{
     color: var(--third-off-white);
-}
-
+    border-radius: 10rem;
+    transition: .5s;
+  }
 /* ============================================================================ */
 /* Service Section */
 .serviceSection {
@@ -353,7 +354,7 @@ figure {
 .card:hover .line{
     width: 50%;
     transition: .5s;
-}
+} 
 
 /* ============================================================================ */
 /* Footer Section */
