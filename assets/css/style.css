@@ -17,6 +17,7 @@ html {
     /* Use Rem for measurement || currently 1rem = 10px */
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }   
 
 h1, h2, h3, h4, h5, h6 {
@@ -83,12 +84,13 @@ body {
 /* ============================================================================ */
 /* Main Hero */
 .customHero {
-    background-image: url("../img/code.jpg");
+    background-image: url("../img/bg1.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--main-black);
+    background-blend-mode: overlay;
 }
 .container {
     display: flex;
@@ -97,7 +99,8 @@ body {
     align-items: center;
 }
 .container h1 {
-    color: var(--third-off-white)
+    color: var(--third-off-white);
+    font-weight: bold;
 }
 .field.is-grouped>.control:not(:last-child) {
     margin-right: 0%;
@@ -205,7 +208,7 @@ body {
     flex-direction: row;
 }
 .quotes{
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 300px;
     margin: 1rem;
 }
@@ -245,52 +248,64 @@ body {
 /* About Us Section */
 .about-company{
     /* background-color: var(--main-black); */
-    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--main-black);
+    background-blend-mode: overlay;
 }
-
 .subtitle{
     color: var(--third-off-white);
+}
+.customSub {
+    width: 70%;
+    height: auto;
+    text-align:center;
+    line-height: 2rem;
 }
 .mainCards {
     width: auto;
     height: auto;
     background-color: var(--third-off-white);
-  }
-  .aboutMe-cards {
+}
+.aboutMe-cards {
     width: 100%;
     padding: 3rem;
     display: flex;
-  }
-  .wrapperDiv {
+    background-color: white;
+}
+.wrapperDiv {
     display: flex;
     flex-direction: column;
-    
+
     background-color: white;
-    -webkit-box-shadow: 0px 0px 20px -3px #000000; 
-    box-shadow: 0px 0px 20px -3px #000000;
-    
+    -webkit-box-shadow: 0px 0px 20px -2px #000000; 
+    box-shadow: 0px 0px 20px -2px #000000;
+
     padding: 2rem;
     margin: 2rem;
-  
+
     max-width: 50%;
     width: 50%;
     height: auto;
-  
+
     transition: .5s;
 }
 .aboutTitle {
     text-transform: uppercase;
     line-height: 4rem;
 }
-  .wrapperDiv:hover {
+.wrapperDiv:hover {
     box-shadow: none;
     transition: .5s;
     cursor: pointer;
-  }
-  .img {
+}
+.img {
     max-width: 50%;
     width: 100%;
-  }
+}
 .customText {
     display: flex;
     flex-direction: column;
