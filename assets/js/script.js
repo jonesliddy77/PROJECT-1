@@ -7,7 +7,7 @@ $.ajax({url:queryURL,method:"GET"}).then(function(response){
     sessionStorage.setItem("country",response.country.name);  //Grab with "sessionStorage.getItem("country")"
 
     //Grabs location information from session storage sets in html
-    $(".navLocation").text(sessionStorage.getItem("city")+", "+sessionStorage.getItem("state")+" | ");
+    $(".navLocation").text(sessionStorage.getItem("city")+", "+sessionStorage.getItem("state") + " ");
 })
 
 // End of Geoapify API Code //
