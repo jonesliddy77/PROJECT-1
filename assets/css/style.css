@@ -183,7 +183,17 @@ body {
     background-color: white;
     height: 400px;
     width: 600px;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.quotes{
+    font-size: 2rem;
+    width: 300px;
+}
+.pics{
+    width: 45%;
 }
 .button-container{
     display: flex;
@@ -222,30 +232,76 @@ body {
 .subtitle{
     color: var(--third-off-white);
 }
-.aboutMe-cards{
+.mainCards {
+    width: auto;
+    height: auto;
+    background-color: var(--third-off-white);
+  }
+  .aboutCards {
+    width: 100%;
+    padding: 3rem;
     display: flex;
-    justify-content: center;
-    height: 350px;
+  }
+  .wrapperDiv {
+    display: flex;
+    flex-direction: column;
+    
     background-color: white;
-    padding: 4rem;
-}
-.aboutTitle {
-    text-transform: uppercase;
-    line-height: 4rem;
-}
-.card-content{
-    display: inline-block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 2rem;
+    -webkit-box-shadow: 0px 0px 20px -3px #000000; 
+    box-shadow: 0px 0px 20px -3px #000000;
+    
     padding: 2rem;
+    margin: 2rem;
+  
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+  
     transition: .5s;
-}
-.card-content:hover {
+  }
+  .wrapperDiv:hover {
     box-shadow: none;
     transition: .5s;
-}
-
-
+    cursor: pointer;
+  }
+  .img {
+    max-width: 50%;
+    width: 100%;
+  }
+  .customText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .nameTitle {
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .customName {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .customContact {
+    margin-left: 1rem;
+  }
+  .aboutYou {
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+  #icon{
+    color: var(--main-black);
+      padding:1rem;
+      transition: .5s;
+      font-size: 2rem;
+  }
+  #icon:hover{
+    color: var(--third-off-white);
+    border-radius: 10rem;
+    transition: .5s;
+  }
+  
 /* ============================================================================ */
 /* Service Section */
 .serviceSection {
@@ -276,7 +332,7 @@ body {
 .card:hover .line{
     width: 50%;
     transition: .5s;
-}
+} 
 
 /* ============================================================================ */
 /* Footer Section */
