@@ -12,3 +12,4 @@ $.ajax({url:queryURL,method:"GET"}).then(function(response){
 })
 
 // End of Geoapify API Code //
+
