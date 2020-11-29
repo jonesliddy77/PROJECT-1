@@ -1,3 +1,4 @@
+
 //Calls location API to get location and print to nav bar
 var queryURL="https://api.geoapify.com/v1/ipinfo?apiKey=805c055b98f34c71807194113fb46926"
 $.ajax({url:queryURL,method:"GET"}).then(function(response){
@@ -12,4 +13,3 @@ $.ajax({url:queryURL,method:"GET"}).then(function(response){
 
 // End of Geoapify API Code //
 
-<a href="./servicePage.html"> <button class="title-p5"></button> </a>
