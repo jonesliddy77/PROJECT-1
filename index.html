@@ -42,11 +42,13 @@
         <nav class="navbar customNav">
           <div class="navContainer container">
             <div class="navbar-brand">
-              <a class="navbar-item">
+              <div class="customNavbar navbar-item">
                   <a style="color: #ebebeb" href="./index.html"><span class="persona ml-6">.persona</span></a>
-                  <p class="navLocation" style="color: #ebebeb"></p>
-                  <a class="navService" style="color: #ebebeb" href="./servicePage.html">Services</a>
-              </a>
+                  <div class="navWrapper">
+                    <i style="font-size:2rem; margin: 0rem 1rem;color:#4a4a4a;" class="fas fa-map-marker-alt"></i><p class="navLocation" style="color: #ebebeb"></p>
+                    <a class="navForm" style="color: #ebebeb" href="./servicePage.html"><i style="margin: 0rem .5rem;color:#4a4a4a;"class="far fa-envelope"></i> Services</a>
+                  </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -63,7 +65,7 @@
               <input
                 class="input"
                 type="text"
-                placeholder="Search for a photography service"
+                placeholder="Search for a service"
               />
             </p>
             <p class="control">
@@ -158,90 +160,102 @@
     <!-- About Us Cards -->
     <section class="aboutMe-cards">
       <!-- About Card 1 -->
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-128x128">
-              <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <p class="title is-3">Joe Park</p>
-            <p class="subtitle is-4">@johnsmith</p>
-          </div>
-        </div>
-        <div class="content is-large">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      <div class="wrapperDiv">
+        <figure class="image is-128x128">
+          <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
+        </figure>
+        <div class="customText">
+            <h1 class="customTitle">Jeremy Zhu</h1>
+            <h5 class="customName">Web Designer</h5>
+            <h5 class="customContact">@jeremyishungry</h5>
+            <div class="socialWrapper is-flex is-flex-direction-row m-2">
+              <ul class="cardSocial">
+                <li>
+                  <a href="https://www.instagram.com/jeremyishungry/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/jeishu" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/jeremy-zhu/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
 
       <!-- About Card 2 -->
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-128x128">
-              <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <p class="title is-3">Jeremy Zhu</p>
-            <p class="subtitle is-4">@johnsmith</p>
-          </div>
-        </div>
-        <div class="content is-large">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      <div class="wrapperDiv">
+        <figure class="image is-128x128">
+          <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
+        </figure>
+        <div class="customText">
+            <h1 class="customTitle">Jones Liddy</h1>
+            <h5 class="customName"></h5>
+            <h5 class="customContact"></h5>
+            <div class="socialWrapper is-flex is-flex-direction-row m-2">
+              <ul class="cardSocial">
+                <li>
+                  <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
 
       <!-- About Card 3 -->
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-128x128">
-              <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <p class="title is-3">Jones Liddy</p>
-            <p class="subtitle is-4">@johnsmith</p>
-          </div>
-        </div>
-        <div class="content is-large">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      <div class="wrapperDiv">
+        <figure class="image is-128x128">
+          <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
+        </figure>
+        <div class="customText">
+            <h1 class="customTitle">Joe Park</h1>
+            <h5 class="customName"></h5>
+            <h5 class="customContact"></h5>
+            <div class="socialWrapper is-flex is-flex-direction-row m-2">
+              <ul class="cardSocial">
+                <li>
+                  <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
 
       <!-- About Card 4 -->
-      <div class="card-content">
-        <div class="media">
-          <div class="media-left">
-            <figure class="image is-128x128">
-              <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <p class="title is-3">Darrell Robinson</p>
-            <p class="subtitle is-4">@johnsmith</p>
-          </div>
-        </div>
-        <div class="content is-large">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+      <div class="wrapperDiv">
+        <figure class="image is-128x128">
+          <img src="https://bulma.io/images/placeholders/256x256.png" alt="Placeholder image">
+        </figure>
+        <div class="customText">
+            <h1 class="customTitle">Darrell Robinson</h1>
+            <h5 class="customName"></h5>
+            <h5 class="customContact"></h5>
+            <div class="socialWrapper is-flex is-flex-direction-row m-2">
+              <ul class="cardSocial">
+                <li>
+                  <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
     </section>
