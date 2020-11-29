@@ -25,7 +25,7 @@ Under Construction
 ## Links
 
 * Project Repo: [Repository](https://github.com/jonesliddy77/Persona)
-* GitHub Page: [Website](https://github.com/jonesliddy77/Persona)
+* GitHub Page: [Website](https://jonesliddy77.github.io/Persona/)
 
 ## Demo
 
