@@ -147,6 +147,7 @@ $("button").click(function(event) {
     // console.log(value);
     serviceSecEl.empty();
 
+    // if statements that render each card in the arrays above
     if(value === "Photography") {
         console.log("this is photos");
         for (let i = 0; i < photoArr.length; i++) {
