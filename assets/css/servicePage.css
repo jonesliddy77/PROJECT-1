@@ -290,6 +290,7 @@ footer{
       width: 100%;
       padding: 0rem;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;
       align-items: center;
