@@ -335,9 +335,5 @@ function initPaymentRequest() {
   } else {
     ChromeSamples.setStatus('This browser does not support web payments');
   }}
-
-
-
-
 );
 
