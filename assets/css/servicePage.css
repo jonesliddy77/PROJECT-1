@@ -17,6 +17,7 @@ html {
   /* Use Rem for measurement || currently 1rem = 10px */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1,
@@ -33,6 +34,7 @@ body {
   background-color: var(--third-off-white);
   position: relative;
 }
+
 /* ============================================================================ */
 /* Navbar */
 .customNav {
@@ -95,7 +97,6 @@ body {
 
   border-radius: 5px;
   transition: .5s;
-
 }
 .button{
   font-family: "Yanone Kaffeesatz", sans-serif;
@@ -130,8 +131,8 @@ body {
   flex-direction: column;
   
   background-color: white;
-  -webkit-box-shadow: 0px 0px 20px -3px #000000; 
-  box-shadow: 0px 0px 20px -3px #000000;
+  -webkit-box-shadow: 0px 0px 10px -1px #6b6b6b; 
+  box-shadow: 0px 0px 10px -1px #6b6b6b;
   
   padding: 2rem;
   margin: 2rem;
@@ -174,18 +175,22 @@ figure {
   margin: 1rem;
   font-size: 1.3rem;
 }
+
 /* ============================================================================ */
 /* Buy Button Section */
+.paySection {
+  width: 100%;
+  border-top: rgb(206, 206, 206) 1px solid;
+}
 #buyButton{
-  font-size: 1.6rem;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  margin: 1.5rem;
-  -webkit-box-shadow: 0px 0px 20px -3px #000000; 
-  box-shadow: 0px 0px 10px -3px #000000;
+  font-size: 2rem;
+  -webkit-box-shadow: 0px 0px 10px -2px #373737; 
+  box-shadow: 0px 0px 10px -2px #373737;
   border-radius: 5px;
   transition: .5s;
-  background-color: var(--third-off-white);
-  padding: .5rem 1rem;
+  background-color: white;
+  padding: 0rem 2rem;
+  margin: 1.5rem;
 }
 #buyButton:hover{
   box-shadow: none;
@@ -270,54 +275,98 @@ footer{
   transition: .5s;
 }
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
- /* ============================================================================ */
-/* Nav Section */
-.customNav {
-  font-size: 2rem;
-}
-.navLocation, .navForm {
-  font-size:1.5rem;
-  transition: .5s;
-}
-
 /* ============================================================================ */
-/* Service Section */
-    .serviceSection {
-      width: 100%;
-      padding: 0rem;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .wrapperDiv{
-      width: 100%;
-      max-width: 100%;
-    }
-/* ============================================================================ */
-/* Buy Button Section */
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+/* Navbar  */
+  .customNavbar {
+    width: 90%;
+  }
+/* Service Dropdowns */
+  .serviceSection {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+  }
+  .wrapperDiv {
+    display: flex;
+    flex-direction: column;
 
-    #buyButton{
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .customText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customTitle {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .customName {
+    margin-left: 0rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .customContact {
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .customContent {
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+/* Navbar */
+  .customNav {
+      position: static;
+      transition: .5s;
+  }
+  .customNav a span {
+      font-size: 2.5rem;
+  }
+/* Service Dropdowns */
+  .serviceSection {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapperDiv {
+    flex-direction: column;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 630px) {
+/* Service Dropdowns */
+  .wrapperDiv {
+    max-width: 100%;
+    width: 100%;
+  }
+
+/* Footer */
+  .infoFooter {
       font-size: 1.5rem;
-    }
-/* ============================================================================ */
-/* Footer Section */
-.infoFooter {
-  font-size: 1rem;
-  width: 80%;
- }
-.infoSection {
-  margin: 1rem 1rem 1rem;
-  padding: 1rem;
-}
-.infoContent{
-  display: flex;
-  flex-direction: column !important;
-  font-size: 1.5rem;
-}
+      width: 100%;
+  }
+  .infoSection {
+      margin: 1rem;
+      padding: 1rem;
+  }
+  .infoSection ul {
+      letter-spacing: 0rem;
+      line-height: 3rem;
+  }
+  .infoContent {
+      padding: 1rem;
+      font-size: 1.5rem;
+  }
+  #copyright {
+      padding-left: 0rem;
+      width: fit-content;
+  }
 }
