@@ -106,7 +106,7 @@ APIs Used:
     * Created the google document for project proposal
     * Collaborated with Joe to get the Payment API to work.
 * Jones Liddy
-    * Created the group repository, testimonals section, about us sections, dropdown on service page
+    * Created the group repository, testimonals section, about us sections, dropdown on service page, Media Queries on service page, help woth service page js cards, Creating about us cards.
     * Clean up CSS and HTML code as needed.
     * Created the initial files needed.
 > Function Team
