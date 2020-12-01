@@ -84,7 +84,7 @@ body {
 /* ============================================================================ */
 /* Main Hero */
 .customHero {
-    background-image: url("../img/bg1.jpg");
+    background-image: url("../img/bg/bg1.jpg");
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -248,7 +248,7 @@ body {
 /* About Us Section */
 .about-company{
     /* background-color: var(--main-black); */
-    background-image: url(../img/bg2.jpg);
+    background-image: url("../img/bg/bg2.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;

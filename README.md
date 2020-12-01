@@ -10,7 +10,6 @@ This application is intended to help clients find the appropriate freelancing se
 * [Links](#Links)
 * [Demo](#Demo)
 * [Language](#Language)
-* [Code-Example](#Code-Example)
 * [Developer-Notes](#Developer-Notes)
 * [Reference](#Reference)
 * [Credits](#Credits)
@@ -34,7 +33,7 @@ Main Features:
 
 ## Demo
 
-![Nothing Here]()
+![Persona Website Demo](./assets/img/Persona.gif)
 
 ## Language
 
@@ -44,9 +43,6 @@ Main Features:
 * [jQuery](https://jquery.com/)
 * [Bulma](https://bulma.io/)
 
-## Code-Example
-
-Under Construction
 
 ## Developer-Notes
 
@@ -55,7 +51,7 @@ Under Construction
     * The idea was to gain invaluable experience creating a professional-looking services website to better understand how clients and prospective freelancers interact with UI/UX design choices.
     * This project allowed us to gain some insight into how much work goes into desiging the front-end of a website.
 * Learning Bulma's CSS framework was comparable in difficulty to Bootstrap's CSS framework: both are quite simple, developer friendly, and the CSS classifications were very straight forward.
-    * Besides Bulma's CSS framework, I implemented my own custom CSS to fill in the gaps that Bulma did not work.
+    * Besides Bulma's CSS framework, I implemented my own custom CSS to fill in the gaps where Bulma did not work.
     * The overall UI/UX design of our website was heavily inspired by fiverr.
 * We had a lot of ideas for our final design, but, due to technical limitations they were scrapped:
     * We had a search bar, but didn't end up using it, because we could not get it to work with our two APIs. 
@@ -110,7 +106,7 @@ APIs Used:
         * Created the google document for project proposal.
         * Collaborated with Joe to get the Payment API to work.
 * Jones Liddy
-    * Created the group repository, testimonals section, about us sections, dropdown on service page, Media Queries on service page, help woth service page js cards, Creating about us cards.
+    * Created the group repository, testimonals section, about us sections, dropdown on service page, Media Queries on service page, help wtth service page JS cards, Creating about us cards.
     * Clean up CSS and HTML code as needed.
     * Created the initial files needed.
     * Add Media Queries in the service.html
