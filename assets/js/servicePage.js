@@ -8,7 +8,7 @@ const photoArr = [
         service: "Photo Retouch",
         freelancer: "Bobby Booper",
         contact: "123-456-7890",
-        description: "Want to publish perfect and beautiful selfies to Facebook or Instagram and make your friends go wow but are missing the budget to buy photo editor software? Persona’s photo retouch service has your back. This service is also included in the photography services.",
+        description: "Want to publish perfect and beautiful selfies to Facebook or Instagram and make your friends go wow but are missing the budget to buy photo editor software?",
         img: "./assets/img/services/retouch.jpg" // Credits to https://unsplash.com/@zvandrei
     },
     {
@@ -335,9 +335,5 @@ function initPaymentRequest() {
   } else {
     ChromeSamples.setStatus('This browser does not support web payments');
   }}
-
-
-
-
 );
 

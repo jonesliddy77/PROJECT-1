@@ -10,7 +10,6 @@ This application is intended to help clients find the appropriate freelancing se
 * [Links](#Links)
 * [Demo](#Demo)
 * [Language](#Language)
-* [Code-Example](#Code-Example)
 * [Developer-Notes](#Developer-Notes)
 * [Reference](#Reference)
 * [Credits](#Credits)
@@ -24,7 +23,7 @@ Main Features:
 * Sticky navigation bar follows the user as they traverse from the top of the webpage to the bottom. 
 * A testimonials section that scrolls as the user clicks on the different dots.
 * A fully functional services page with drop down menu list.
-* Location tracker API dynaically updates based on user's IP address data. 
+* Location tracker API dynamically updates based on user's IP address data. 
 * Payment API allows user's to demo paying information in their browser. 
 
 ## Links
@@ -34,7 +33,7 @@ Main Features:
 
 ## Demo
 
-![Persona Website Demo](https://github.com/jonesliddy77/Persona/blob/main/Persona.gif)
+![Persona Website Demo](./assets/img/Persona.gif)
 
 ## Language
 
@@ -44,9 +43,6 @@ Main Features:
 * [jQuery](https://jquery.com/)
 * [Bulma](https://bulma.io/)
 
-## Code-Example
-
-Under Construction
 
 ## Developer-Notes
 
@@ -94,25 +90,32 @@ APIs Used:
 > - [Geoapify](https://apidocs.geoapify.com/) || Our location tracker is from this API.
 > - [PaymentRequest API](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API) || Our payment information is from this API. 
 
-
 ## Contributors
 
 > Design Team
 * Jeremy Zhu
-    * Design the overall website.
-    * Created the navigation bar, logo, all slogans, service page, service page cards, animations, footer, header, social media tags, JS to render the service cards, trusted by section, most hover effects.
-    * Clean up CSS and HTML code as needed.
-    * Created README file and updating.
-    * Created the google document for project proposal
-    * Collaborated with Joe to get the Payment API to work.
+    * Visual Design: 
+        * Design the overall website.
+        * Created the navigation bar, logo, all slogans, service page, service page cards, animations, footer, header, social media tags, JS to render the service cards, trusted by section, most hover effects.
+    * Responsive Web Design: 
+        * Added Media Queries to the index.html and service.html.
+        * Used Bulma classes and own CSS for better media queries.
+    * Proofread and MISC:
+        * Clean up CSS and HTML code as needed.
+        * Created README file and updating.
+        * Created the google document for project proposal.
+        * Collaborated with Joe to get the Payment API to work.
 * Jones Liddy
-    * Created the group repository, testimonals section, about us sections, dropdown on service page, Media Queries on service page, help woth service page js cards, Creating about us cards.
+    * Created the group repository, testimonals section, about us sections, dropdown on service page, Media Queries on service page, help wtth service page JS cards, Creating about us cards.
     * Clean up CSS and HTML code as needed.
     * Created the initial files needed.
+    * Add Media Queries in the service.html
 > Function Team
 * Joe Park
     * Worked on the payment API
-    * Added the API to the service.html 
+    * Added the API to the service.html
+    * Added Relative path to buttons on the index.html
+    * Updated Main features in the README file.
 * Darrell Robinson
     * Worked on the Geoapify API
     * Added the API to the index.html and service.html
